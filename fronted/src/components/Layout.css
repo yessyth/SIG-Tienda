@@ -1,0 +1,59 @@
+/* frontend/src/components/Layout.css */
+
+/* El contenedor de toda la aplicación. Ocupa el 100% de la ventana. */
+.app-layout {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden; /* Previene scroll en el nivel más alto */
+}
+
+/* --- COLUMNA 1: Barra Lateral (Ancho Fijo) --- */
+.sidebar {
+  width: 250px;       /* Ancho fijo */
+  flex-shrink: 0;   /* ¡CRÍTICO! No se encogerá por más que el contenido empuje */
+  background-color: #1e2a3a;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+/* --- COLUMNA 2: Contenido Principal (Ancho Flexible y Scrollable) --- */
+.main-content-wrapper {
+  flex-grow: 1; /* Ocupa todo el espacio disponible */
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* Previene que este contenedor cree sus propios scrollbars */
+}
+
+.app-header {
+  padding: 1rem 2rem;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+  flex-shrink: 0; /* El header no se encoge verticalmente */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.welcome-message {
+  font-weight: 500;
+  color: #555;
+}
+
+.content-area {
+  flex-grow: 1; /* Ocupa el resto del espacio vertical */
+  padding: 2rem;
+  overflow-y: auto; /* ¡LA MAGIA! Solo esta área tendrá scroll vertical */
+  overflow-x: hidden;/* Previene el scroll horizontal no deseado */
+}
+
+/* --- COLUMNA 3: Asistente (Ancho Fijo) --- */
+.asistente-panel {
+  width: 320px;       /* Ancho fijo */
+  flex-shrink: 0;   /* ¡CRÍTICO! No se encogerá */
+  background-color: #ffffff;
+  border-left: 1px solid #e0e0e0;
+  display: flex;
+  flex-direction: column;
+}

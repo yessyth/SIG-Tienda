@@ -1,0 +1,28 @@
+/* frontend/src/pages/Reportes.css */
+
+.kpi-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.kpi-card { background: white; padding: 1.5rem; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); border: 1px solid #e0e0e0; }
+.kpi-card h4 { margin: 0 0 0.5rem 0; color: #888; font-weight: 500; font-size: 0.9rem; }
+.kpi-card .kpi-value { font-size: 2.2rem; font-weight: bold; color: #1e2a3a; }
+.kpi-card:nth-child(2) .kpi-value { color: #ffc107; }
+
+.charts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.chart-container { background: white; padding: 1.5rem; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); border: 1px solid #e0e0e0; min-width: 400px; }
+.chart-container h3 { margin-top: 0; margin-bottom: 1.5rem; }
+
+/* El resto de tus estilos para tablas de detalle, modales, etc., pueden quedarse aquí */
+.details-button { background-color: #0d6efd; color: white; border: none; padding: 0.6rem 1.2rem; border-radius: 5px; cursor: pointer; font-weight: 500; transition: background-color 0.2s; }
+.details-button:hover { background-color: #0b5ed7; }
+/* ... (y los demás estilos de modal) */

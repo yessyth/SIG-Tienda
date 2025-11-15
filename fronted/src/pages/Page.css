@@ -1,0 +1,44 @@
+/* frontend/src/pages/Page.css */
+/* Este archivo contiene estilos comunes para todas las páginas */
+
+.page-header, .page-header-inv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.page-header h1, .page-header-inv h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.add-button, .add-button-inv, .export-button {
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background-color 0.2s;
+  color: white;
+}
+.add-button svg, .add-button-inv svg, .export-button svg {
+  margin-right: 0.5rem;
+}
+
+.add-button { background-color: #007bff; }
+.add-button:hover { background-color: #0056b3; }
+
+.add-button-inv, .export-button { background-color: #20c997; }
+.add-button-inv:hover, .export-button:hover { background-color: #1ba982; }
+
+.table-container {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e0e0e0;
+}

@@ -1,0 +1,6 @@
+# Excluir dependencias de Node
+node_modules
+/backend/node_modules
+
+# Excluir archivos de entorno
+.env
