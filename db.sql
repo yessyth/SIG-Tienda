@@ -1,3 +1,9 @@
+-- Eliminar tablas si existen (en orden correcto por las dependencias)
+DROP TABLE IF EXISTS Detalle_Ventas CASCADE;
+DROP TABLE IF EXISTS Ventas CASCADE;
+DROP TABLE IF EXISTS Productos CASCADE;
+
+-- Crear las tablas nuevamente
 CREATE TABLE Productos (
     id SERIAL PRIMARY KEY,
     nombre VARCHAR(100) NOT NULL,
